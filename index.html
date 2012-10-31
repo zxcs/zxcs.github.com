@@ -8,16 +8,3 @@ layout:           index
  {% endfor %}
 </ol>
  
- 
-<div id=float_top_right>
-<h4>&nbsp;分类浏览</h4>
-<ol>
-    {% for category in site.categories %}
-    <li>
-    <a href="/categories/{{ category | first }}/" title="查看此类别的所有文章">
-        {{ category | first }}({{ category | last | size }})</a>
-    </li>
-    {% endfor %}
-</ol>
-</div>
- 
